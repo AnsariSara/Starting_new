@@ -1,0 +1,12 @@
+// Summation and Average of numbers using tuples..
+
+function sum_average (argList : number[]) : [number, number] {
+    let total = 0;
+    for (let i = 0 ; i < argList.length ; ++i){
+        total += argList[i];
+    }
+    return [total , total / argList.length];
+}
+
+let sum_avg: [number, number]=sum_average([10, 20, 30, 40, 50]);
+console.log(`Summation is => ${sum_avg[0]}  and Average is => ${sum_avg[1]}`);
