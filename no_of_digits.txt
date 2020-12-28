@@ -1,0 +1,13 @@
+// Number of digits..
+
+let numbers : number = 98456;
+let num1 : number = 0;
+let num2 : number = 0;
+let counts : number = 0;
+while (numbers > num1){
+    num1 = numbers % 10;
+    num2 = numbers / 10;
+    numbers = num2;
+    counts = counts + 1;
+}
+console.log(`Number of Digits are : ${counts}`);
