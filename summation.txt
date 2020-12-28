@@ -1,0 +1,11 @@
+// Summation of numbers..
+
+function sum (argList : number[]) : number {
+    let total = 0;
+    for (let i = 0 ; i < argList.length ; ++i){
+        total += argList[i];
+    }
+    return total;
+}
+let summation: number = sum ([10, 20, 30, 40, 50]);
+console.log(`Summation is => ${summation}`);
