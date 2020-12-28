@@ -1,0 +1,32 @@
+// Factorial using recursion is faster than using iteration....
+
+
+
+
+// Factorial using iteration...
+
+let fact : number , i : number , n : number;
+fact = 1;
+n = 5;
+for (let i : number = 1 ; i <= n ; i++){
+    fact = fact * i;
+}
+console.log(`Factorial of ${n} is => ${fact}`);
+
+
+
+
+
+
+// Factorial using recursion...
+
+function factorial(num : number){
+    let fact : number = 1;
+    if (num == 1)
+    return 1;
+    else
+    fact = num * factorial(num - 1);
+    return fact;
+}
+let fact_is : number = factorial(171);
+console.log(`Factorial of 171 is => ${fact_is}`);
