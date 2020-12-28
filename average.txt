@@ -1,0 +1,12 @@
+// Average of numbers..
+
+function average (argList : number[]) : number {
+    let total = 0;
+    for (let i = 0 ; i < argList.length ; ++i){
+        total += argList[i];
+    }
+    return total / argList.length;
+}
+let avg: number=average([10, 20, 30, 40, 50]);
+console.log(`Average is => ${avg}`);
+
