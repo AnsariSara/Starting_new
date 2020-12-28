@@ -1,0 +1,17 @@
+
+// Largest number
+
+let n1 : number , n2 : number , n3 : number;
+n1 = 10 , n2 = 25 , n3 = 3;
+if (n1 >= n2){
+    if (n1 >= n3)
+    console.log(`Largest number is => ${n1}`);
+    else
+    console.log(`Largest number is => ${n3}`);
+}
+else{
+    if (n2 >= n3)
+    console.log(`Largest number is => ${n2}`);
+    else
+    console.log(`Largest number is => ${n3}`);
+}
