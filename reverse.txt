@@ -1,0 +1,10 @@
+// Reverse of a number..
+
+let num : number = 123;
+let rev : number = 0;
+while (num > 0){
+    rev = (rev * 10) + num % 10;
+    num = num / 10;
+    num = ~~num;
+}
+console.log(`Reverse of 123 is : ${rev}`);
