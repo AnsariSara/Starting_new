@@ -1,0 +1,14 @@
+// Temperature conversion..
+
+let celcius : number = 37;
+let fahrenheit : number = 50;
+let fah : number = 0;
+let cel : number = 0;
+
+
+fah = (celcius * 1.8) + 32;
+cel = (fahrenheit - 32) / 1.8;
+
+console.log(`${celcius} celcius  =  ${fah} fahrenheit`);
+console.log(`${fahrenheit} fahrenheit  =  ${cel} celcius`);
+
