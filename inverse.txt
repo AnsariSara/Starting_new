@@ -1,0 +1,5 @@
+// Inverse of a digit..
+
+let no : number = 50;
+let inverse : number = -no;
+console.log(`Inverse of ${no} is ${inverse}`);
