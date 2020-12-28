@@ -1,0 +1,26 @@
+// Number exist in the List of input numbers..
+
+let a: number =30;
+let b: number[] = [10 , 20 , 30 , 40 , 50];
+if(b.includes(a))
+console.log("True");
+else
+console.log("False");
+
+
+
+
+// Number of time the given number exist in the list of input numbers..
+
+function countOccurences(arr : number[] , n : number , x : number)
+{
+    let count : number = 0;
+    for (let i : number = 0 ; i < n ; i++){
+        if (x === arr[i]){
+            count++
+        }
+    }
+    return count;
+}
+let occurance : number = countOccurences([10,75,96,15,10,10,45,63,10,10,20,30,30,40,30,30],10,10);
+console.log(`${occurance}`);
