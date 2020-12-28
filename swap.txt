@@ -1,0 +1,51 @@
+// Swapping of number using temporary variable..
+
+let temp : number;
+let a : number = 2;
+let b : number = 3;
+
+temp = a;
+a = b;
+b = temp;
+
+console.log(`The value of a after swapping:${a}`);
+console.log(`The value of b after swapping:${b}`);
+
+
+console.log('-----------------------------------------------------------');
+
+
+
+
+// Swapping of number without using temporary variable..
+
+let num1 : number = 10;
+let num2 : number = 20;
+num1 = num1 + num2;
+num2 = num1 - num2;
+num1 = num1 - num2;
+
+console.log(`Value of num1 after swapping is => ${num1}`);
+console.log(`Value of num2 after swapping is => ${num2}`);
+
+
+console.log('-----------------------------------------------------------');
+
+
+
+
+// Swapping of number using function..
+
+let num3 : number = 10;
+let num4 : number = 20;
+function swap(num3 : number, num4 : number) : [number , number]{
+    num3 = num3 + num4;
+    num4 = num3 - num4;
+    num3 = num3 - num4;
+
+    return[num3 , num4];
+}
+
+let result : [number,number] = swap(num3 , num4);
+console.log(`Value of num3 after swapping is => ${result[0]}`);
+console.log(`Value of num4 after swapping is => ${result[1]}`);
