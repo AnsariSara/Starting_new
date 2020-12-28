@@ -1,0 +1,13 @@
+// Rounding off the numbers...
+
+
+let x = -3.7
+
+console.log('Rounding off the number done using tiled symbol' , ~~x) 
+
+console.log('Rounding off the number done using OR symbol' , x | 0) 
+
+console.log('Rounding off the number done using "<<" symbol' , x << 0) 
+
+
+
