@@ -1,0 +1,18 @@
+// Palindrome number..
+
+let n : number = 151;
+let r : number;
+let sum : number = 0;
+let temp : number;
+
+temp = n;
+while (n > 0){
+    r = n % 10;
+    sum = (sum * 10) + r;    
+    n = n / 10; 
+    n = ~~n;
+}
+if (temp == sum)
+    console.log("palindrome number ");
+else
+    console.log("not palindrome");
