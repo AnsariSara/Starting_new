@@ -1,0 +1,11 @@
+// Sum of Integers..
+
+    function sum_of_integers(argList : number[]) : [number] {
+        let sum = 0;
+        for (let i = 0 ; i < argList.length ; ++i){
+            sum = sum + argList[i];
+        }
+        return [sum];
+    }
+    let sum_of_int : [number] = sum_of_integers([10, 20, 30, 40, 50,50]);
+    console.log(`Sum of Integers are => ${sum_of_int}`);
