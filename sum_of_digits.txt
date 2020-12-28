@@ -1,0 +1,11 @@
+// Sum of digits..
+
+let a : number = 248;
+let summ : number = 0;
+while (a > 0){
+    summ = summ + a % 10;
+    a = a / 10;
+}
+summ = ~~summ;
+summ = summ-1;
+console.log(`Sum of digits are : ${summ}`);
